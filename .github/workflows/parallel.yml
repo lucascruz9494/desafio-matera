@@ -1,0 +1,30 @@
+name: End-to-end tests parallel
+on: [push]
+jobs:
+  cypress-run-1:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        with:
+          command: npm run login_teste
+  cypress-run-2:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        with:
+          command: npm run cadastro_perfil_acesso_teste
+  cypress-run-3:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        with:
+          command: npm run cadastro_usuario_teste
