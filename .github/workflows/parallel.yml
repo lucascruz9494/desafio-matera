@@ -1,7 +1,7 @@
 name: End-to-end tests parallel
 on: [push]
 jobs:
-  cypress-run-1:
+  Teste de login:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -10,7 +10,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           command: npm run login_teste
-  cypress-run-2:
+  Teste de Cadastro de Perfil:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -19,7 +19,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           command: npm run cadastro_perfil_acesso_teste
-  cypress-run-3:
+  Teste de Cadastro de Usuário:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
