@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "Cypress open",
-    
+    "cy:run": "Cypress run",
     "cadastro_perfil_acesso_teste": "cypress run --spec 'cypress/integration/cadastro_perfil_acesso.spec.js'",
     "login_teste": "cypress run --spec 'cypress/integration/login.spec.js'",
     "cadastro_usuario_teste": "cypress run --spec 'cypress/integration/cadastro_usuario.spec.js'"
