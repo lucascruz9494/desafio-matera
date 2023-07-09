@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:open": "Cypress open"
+    "cy:open": "Cypress open",
+    
+    "cadastro_perfil_acesso_teste": "cypress run --spec 'cypress/e2e/integration/cadastro_perfil_acesso.spec.js'",
+    "login_teste": "cypress run --spec 'cypress/e2e/integration/login.spec.js'",
+    "cadastro_usuario_teste": "cypress run --spec 'cypress/e2e/integration/cadastro_usuario.spec.js'"
+    
   },
   "keywords": [],
   "author": "",
